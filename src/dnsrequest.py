@@ -306,7 +306,7 @@ class DNSRequest:
         print()
 
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
     # # DNS
     # test_request = DNSRequest(DNS_DEF, PORT)
     # test_request.input_dns()

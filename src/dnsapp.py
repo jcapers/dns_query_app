@@ -101,8 +101,9 @@ class DNSApp(QWidget):
                 self.run_query(host, dns)
             except:
                 self.result_box.append("Error, check host and/or DNS.")
-            # Reset for next query.
-            self.DNSSearch = dnsrequest.DNSRequest(DNS_DEF, PORT)
+            finally:
+                # Reset for next query.
+                self.DNSSearch = dnsrequest.DNSRequest(DNS_DEF, PORT)
 
     def run_query(self, host, dns):
         """
